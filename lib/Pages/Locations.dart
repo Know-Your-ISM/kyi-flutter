@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kyism/Services/getLocations.dart';
+import 'package:kyism/TabPages/Restaurants/getRestaurants.dart';
 import 'package:kyism/TabPages/AddLocations/Add.dart';
-import 'package:kyism/Services/getRestaurants.dart';
+import 'package:kyism/TabPages/CampusLocations/getLocations.dart';
 
 
 class Locations extends StatefulWidget {

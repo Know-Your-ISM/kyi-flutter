@@ -25,7 +25,7 @@ class _DashboardState extends State<Dashboard> {
                 SizedBox(height: 5,),
                 Text("Dashboard",style: TextStyle(color: CupertinoColors.systemGrey,fontSize: 16),),]),
                 SizedBox(height:10),
-                Image.asset("assets/capture.PNG",height:MediaQuery.of(context).size.height*(1/4),),
+                Image.asset("assets/captured.png",height:MediaQuery.of(context).size.height*(1/4),),
             SizedBox(height:20),
             Card(
                     color: CupertinoColors.white,

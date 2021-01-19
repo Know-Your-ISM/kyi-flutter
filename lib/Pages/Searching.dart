@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kyism/Model/User.dart';
+import 'package:kyism/Model/model.dart';
 import 'package:kyism/Pages/userList.dart';
 import 'package:kyism/Services/Search.dart';
 
@@ -8,10 +9,12 @@ import 'NoUser.dart';
 import 'errorPage.dart';
 
 class Process extends StatelessWidget {
-  Process({this.name,this.city,this.admission_no});
+  Process({this.name,this.geoState,this.house,this.branch,this.club});
   final String name;
-  final String city;
-  final String admission_no;
+  final GeoState geoState;
+  final House house;
+  final Branch branch;
+  final Club club;
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(builder: (BuildContext context, AsyncSnapshot<User> snapshot) {
@@ -30,7 +33,7 @@ class Process extends StatelessWidget {
         }
       }
     },
-      future: getUser(name, city, admission_no),
+      future: getUser(name, geoState,house,branch,club),
     );
   }
 }
